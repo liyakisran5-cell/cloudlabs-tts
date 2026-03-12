@@ -1,9 +1,0 @@
-{
-  "name": "cloudlabs-tts",
-  "version": "1.0.0",
-  "description": "CloudLabs Text to Speech with ElevenLabs Voice Cloning",
-  "dependencies": {
-    "form-data": "^4.0.0",
-    "formidable": "^3.5.1"
-  }
-}
