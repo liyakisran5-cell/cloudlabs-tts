@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "api/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    { "src": "/api/voices", "dest": "/api/voices.js" },
+    { "src": "/api/tts", "dest": "/api/tts.js" },
+    { "src": "/api/clone", "dest": "/api/clone.js" },
+    { "src": "/api/delete-voice", "dest": "/api/delete-voice.js" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
